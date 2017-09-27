@@ -1,0 +1,15 @@
+{
+  "name": "simplerpc",
+  "version": "1.0.0",
+  "description": "create simple json rpc server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/skywills/simple-rpc-server"
+  },
+  "author": "skywills",
+  "license": "ISC"
+}
