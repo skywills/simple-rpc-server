@@ -11,5 +11,8 @@
     "url": "http://www.github.com/skywills/simple-rpc-server"
   },
   "author": "skywills",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jayson": "^2.0.4"
+  }
 }

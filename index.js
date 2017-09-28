@@ -10,16 +10,35 @@ var server = jayson.server({
 });
 
 server.tcp().listen(port);
+console.log('Tcp Server is running..');
 
-
-// create a client
 var client = jayson.client.tcp({
-    port: port
-  });
-  
-  // invoke "add"
-  client.request('miner_getstat1', null, function(err, response) {
-    if(err) throw err;
-    console.log(response.result); // 2
-  });
+  port: port
+});
 
+// invoke "add"
+client.request('miner_getstat1', null, 0, function(err, response) {
+  if(err) throw err;
+  console.log('result returned....');
+ // console.log(response.result); // 2
+});
+
+
+/*
+setInterval(function() {
+
+  // create a client
+var client = jayson.client.tcp({
+  port: port
+});
+
+// invoke "add"
+client.request('miner_getstat1', null, function(err, response) {
+  if(err) throw err;
+  console.log(response.result); // 2
+});
+
+
+
+}, 2000);
+*/
