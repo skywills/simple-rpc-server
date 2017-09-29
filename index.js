@@ -21,7 +21,10 @@ const app = express()
 const http_port = 42000
 
 app.get('/getstat', (request, response) => {
-  response.json({"method":"getstat", "error":null, "start_time":1506614470, "current_server":"asia1-zcash.flypool.org:3333", "available_servers":3, "server_status":2, "result":[{"gpuid":0, "cudaid":0, "busid":"0000:01:00.0", "name":"GeForce GTX 1080 Ti", "gpu_status":2, "solver":0, "temperature":67, "gpu_power_usage":178, "speed_sps":628, "accepted_shares":109, "rejected_shares":0, "start_time":1506614471}]});
+  response.json({"method":"getstat", "error":null, "start_time":1506614470, "current_server":"asia1-zcash.flypool.org:3333", "available_servers":3, "server_status":2, 
+  "result":[{"gpuid":0, "cudaid":0, "busid":"0000:01:00.0", "name":"GeForce GTX 1080 Ti", "gpu_status":2, "solver":0, "temperature":67, "gpu_power_usage":178, "speed_sps":628, "accepted_shares":109, "rejected_shares":0, "start_time":1506614471},
+  {"gpuid":1, "cudaid":0, "busid":"0000:01:00.0", "name":"GeForce GTX 1080 Ti", "gpu_status":2, "solver":0, "temperature":67, "gpu_power_usage":178, "speed_sps":628, "accepted_shares":109, "rejected_shares":0, "start_time":1506614471},
+  {"gpuid":2, "cudaid":0, "busid":"0000:01:00.0", "name":"GeForce GTX 1080 Ti", "gpu_status":2, "solver":0, "temperature":67, "gpu_power_usage":178, "speed_sps":628, "accepted_shares":109, "rejected_shares":0, "start_time":1506614471}]});
 })
 
 app.listen(http_port, (err) => {
