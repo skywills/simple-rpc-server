@@ -12,11 +12,7 @@
   },
   "author": "skywills",
   "license": "ISC",
-<<<<<<< HEAD
   "dependencies": {
-=======
-  "devDependencies": {
->>>>>>> 27e198a33be14b34c501926618564b6f0eaaa9f7
     "jayson": "^2.0.4"
   }
 }
