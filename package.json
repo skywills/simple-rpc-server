@@ -13,6 +13,7 @@
   "author": "skywills",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.0",
     "jayson": "^2.0.4"
   }
 }
